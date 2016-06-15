@@ -1,0 +1,15 @@
+{
+	"parent"	: "station_anchor",
+	"tag"		: "station_wall_anchor",
+	"layer" 	: ["background", 200],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		}
+	}
+}

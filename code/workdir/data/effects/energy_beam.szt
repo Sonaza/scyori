@@ -1,0 +1,48 @@
+{
+	"layer" : ["foreground", 50],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"pivot"		: [-250, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "energy_beam",
+			"color"		: [120, 200, 250],
+			"blendmode"	: "additive",
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			}
+		},
+		
+		"animation" :
+		{
+			"framesize" : [500, 50],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 39,
+					"fps"		: 24,
+					"looping"	: 1
+				}
+			}
+		}
+	}
+}

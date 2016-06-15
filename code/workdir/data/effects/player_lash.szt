@@ -1,0 +1,54 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 99],
+	
+	"assets" :
+	{
+		/*"textures" :
+		{
+			"player"		: "player.png"
+		}*/
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"pivot"		: [-146, 132],
+			"rotation" 	: [0],
+			"scale" 	: [1.8, 1.8]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "player_lash",
+			"blendmode"	: "additive"
+		},
+		
+		"animation" :
+		{
+			"framesize" : [380, 380],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle"		:
+				{
+					"start" 	: 0,
+					"end"		: 0,
+					"fps"		: 50,
+					"looping"	: 0
+				},
+				
+				"cleave" 	:
+				{
+					"start" 	: 1,
+					"end"		: 23,
+					"fps"		: 23,
+					"looping"	: 0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"layer" : ["interface", 51],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, -58],
+			"pivot"		: [0, 0],
+			"rotation" 	: [180],
+			"scale" 	: [1, 1.3],
+			
+			"anchor"	: ["center", "bottom"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "energy_bar",
+			"shader"	: {
+				"asset"	: "bar_shader_e"
+			}
+		}
+	}
+}

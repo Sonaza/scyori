@@ -1,0 +1,21 @@
+{
+	"layer" : ["background", 47],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [100, 150],
+			"depth"		: 47,
+			"scale"		: [2.5, 2],
+			"rotation"	: -25
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "bg_dust2",
+			"blendmode"	: "additive",
+			"opacity"	: 0.65
+		}
+	}
+}

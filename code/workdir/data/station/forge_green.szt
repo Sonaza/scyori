@@ -1,0 +1,43 @@
+{
+	"parent"	: "station_anchor",
+	"layer" 	: ["background", 210],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [0.75, 0.75]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "blank",
+			//"color"		: [140, 255, 50],
+			
+			"shader" 	:
+			{
+				"asset" : "mana_forge_green"
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			
+			"friction"		: 1.0,
+			"restitution"	: 0,
+			"density"		: 1.0,
+			"bodytype"		: "static",
+			
+			"shape" 		: "circle",
+			"radius"		: 480
+		}
+	}
+}

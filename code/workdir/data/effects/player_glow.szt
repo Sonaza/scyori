@@ -1,0 +1,26 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 99],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [3, 3]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "metaball",
+			"blendmode"	: "additive",
+			"color"		: [120, 210, 40, 100]
+		}
+	}
+}

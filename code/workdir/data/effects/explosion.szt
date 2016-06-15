@@ -1,0 +1,61 @@
+{
+	"layer" : ["foreground", 32],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer"	:
+		{
+			"texture"	: "explosion"
+			//"blendmode"	: "additive",
+			
+			//"shader"	: "overlay",
+			//"color"		: [255, 100, 255]
+		},
+		
+		"animation"	:
+		{
+			"framesize" : [320, 240],
+			"autoplay"	: "explode",
+			
+			"sequences" :
+			{
+				"explode" :
+				{
+					"start" 	: 0,
+					"end"		: 49,
+					"fps"		: 100,
+					"looping"	: 0,
+					"next"		: "explode_smoke"
+				},
+				
+				"explode_smoke"	:
+				{
+					"start"		: 50,
+					"end"		: 89,
+					"fps"		: 40,
+					"looping"	: 0
+				},
+				
+				"explode_slower" :
+				{
+					"start" 	: 0,
+					"end"		: 89,
+					"fps"		: 60,
+					"looping"	: 0
+				}
+			}
+		}
+	}
+}

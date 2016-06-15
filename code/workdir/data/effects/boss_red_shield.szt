@@ -1,0 +1,48 @@
+{
+	"parent"	: "boss_red",
+	"layer" 	: ["foreground", 101],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.2, 1.2]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "boss_red_shield",
+			"blendmode"	: "additive",
+			"color"		: [255, 100, 100],
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			}
+		},
+		
+		"animation" :
+		{
+			"framesize" : [250, 250],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 49,
+					"fps"		: 35,
+					"looping"	: 1
+				}
+			}
+		}
+	}
+}

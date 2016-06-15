@@ -1,0 +1,32 @@
+{
+	"layer" : ["interface", 49],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, -25],
+			"pivot"		: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.5, 0.75],
+			
+			"anchor"	: ["center", "bottom"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "bar_base",
+			"color"		: [221, 173, 58],
+			
+			"shader"	: {
+				"asset"	: "bar_shader_flux"
+			}
+		}
+	}
+}

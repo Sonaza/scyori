@@ -1,0 +1,18 @@
+{
+	"layer" : ["background", 6],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [140, -140],
+			"depth"		: 49,
+			"scale"		: [1.2, 1.2]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "theplanet"
+		}
+	}
+}

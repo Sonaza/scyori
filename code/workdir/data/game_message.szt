@@ -1,0 +1,32 @@
+{
+	"layer" : ["interface", 500],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, -300],
+			"scale"		: [1, 1],
+			
+			"pivot"		: [0.0, 0.0],
+			
+			"anchor"	: ["center", "center"],
+			"native"	: 1920
+		},
+		
+		"textrenderer" :
+		{
+			"color"		: [255, 255, 255],
+			
+			"font"		: "powerchord",
+			"size"		: 58,
+			
+			"string"	: ""
+		}
+	}
+}

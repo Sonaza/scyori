@@ -1,0 +1,32 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 150],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.0, 1.0]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "stance_wave",
+			"blendmode"	: "additive",
+			
+			"color"		: [255, 255, 100],
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			}
+		}
+	}
+}

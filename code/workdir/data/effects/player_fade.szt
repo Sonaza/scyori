@@ -1,0 +1,46 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 101],
+	
+	"assets" :
+	{
+		/*"textures" :
+		{
+			"player"		: "player.png"
+		}*/
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "electric",
+			"blendmode"	: "additive",
+			"opacity"	: 0.0
+		},
+		
+		"animation" :
+		{
+			"framesize" : [250, 250],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" :
+				{
+					"start" 	: 0,
+					"end"		: 35,
+					"fps"		: 25,
+					"looping"	: 1
+				}
+			}
+		}
+	}
+}

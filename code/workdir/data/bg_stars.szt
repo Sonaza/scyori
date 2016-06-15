@@ -1,0 +1,21 @@
+{
+	"layer" : ["background", 1],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [-120, -120],
+			"depth"		: 50,
+			"scale"		: [1.5, 1.5]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "bgstars",
+			"blendmode"	: "additive",
+			"opacity"	: 0.7,
+			"color"		: [255, 100, 100]
+		}
+	}
+}

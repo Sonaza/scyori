@@ -1,0 +1,14 @@
+{
+	"tag"		: "station_anchor",
+	"layer" 	: ["background", 200],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [2.3, 2.3]
+		}
+	}
+}

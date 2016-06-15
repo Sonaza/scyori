@@ -1,0 +1,25 @@
+{
+	"parent"	: "station_anchor",
+	"layer" 	: ["background", 201],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"pivot"		: [-1214, 1400],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "station_frame_tr"
+		}
+	}
+}

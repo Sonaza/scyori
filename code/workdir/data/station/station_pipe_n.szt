@@ -1,0 +1,24 @@
+{
+	"parent"	: "station_anchor",
+	"layer" 	: ["background", 200],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [180],
+			"pivot"		: [0, -1352],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "station_pipe_n",
+			"shader"	:
+			{
+				"asset"	: "station_pipe_flow"
+			}
+		}
+	}
+}

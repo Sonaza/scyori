@@ -1,0 +1,61 @@
+{
+	"tag"	: "boss_red",
+	"layer" : ["foreground", 51],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [2.5, 2.5]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "enemy_boss_red",
+			"color"		: [0, 255, 255],
+			
+			"shader" 	:
+			{
+				"asset" : "flash"
+			}
+		},
+		
+		"animation" :
+		{
+			"framesize" : [234, 234],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 99,
+					"fps"		: 33,
+					"looping"	: 1
+				}
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			"speedlimit"	: 180,
+			
+			"friction"		: 0,
+			"restitution"	: 1,
+			"density"		: 2000,
+			"bodytype"		: "dynamic",
+			
+			"shape" 		: "circle",
+			"radius"		: 114
+		}
+	}
+}

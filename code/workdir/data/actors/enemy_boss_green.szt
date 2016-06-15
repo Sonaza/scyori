@@ -1,0 +1,67 @@
+{
+	"layer" : ["foreground", 51],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [2.25, 2.25]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "enemy_boss_green",
+			"color"		: [0, 255, 255],
+			
+			"shader" 	:
+			{
+				"asset" : "flash"
+			}
+		},
+		
+		"animation" :
+		{
+			"framesize" : [250, 218],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 99,
+					"fps"		: 25,
+					"looping"	: 1
+				}
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			"speedlimit"	: 200,
+			
+			"friction"		: 0,
+			"restitution"	: 0,
+			"density"		: 200,
+			"bodytype"		: "dynamic",
+			
+			"shape" 		: "polygon",
+			"vertices"		: [
+				124, 0,
+				62, 107,
+				-62, 107,
+				-124, 0,
+				-62, -107,
+				62, -107
+			]
+		}
+	}
+}

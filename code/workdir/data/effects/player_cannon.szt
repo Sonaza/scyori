@@ -1,0 +1,32 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 101],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"pivot"		: [0, 0],
+			"scale" 	: [1.0, 1.0]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "metaball2",
+			"blendmode"	: "additive",
+			"color"		: [160, 255, 100],
+			
+			"shader"	:
+			{
+				"asset"	: "overlay"
+			}
+		}
+	}
+}

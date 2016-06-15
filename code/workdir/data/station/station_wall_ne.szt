@@ -1,0 +1,44 @@
+{
+	"parent"	: "station_wall_anchor",
+	"layer" 	: ["background", 204],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"pivot"		: [-1532, 880],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "station_wall_ne"
+		}/*,
+		
+		"physics"	:
+		{
+			"shape"			: "polygon",
+			
+			"friction"		: 0.0,
+			"restitution"	: 1.0,
+			"density"		: 0.5,
+			"bodytype"	: "static",
+			
+			"vertices"	: [
+				1318, -504,
+				//0, -506,//262,
+				-1318, -504,
+				-1551, -368,
+				0, 521,
+				1551, -368
+			]
+		}*/
+	}
+}

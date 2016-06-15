@@ -1,0 +1,20 @@
+{
+	"layer" : ["background", 5],
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [-750, -400],
+			"depth"		: 50,
+			"scale"		: [1.2, 1.2]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "thesun",
+			"blendmode"	: "additive",
+			"opacity"	: 0.99
+		}
+	}
+}

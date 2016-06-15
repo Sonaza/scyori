@@ -1,0 +1,33 @@
+{
+	"layer" : ["interface", 51],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 70],
+			"pivot"		: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.5, 1.6],
+			
+			"anchor"	: ["center", "top"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "bar_base",
+			"color"		: [255, 120, 120],
+			"blendmode"	: "additive",
+			
+			"shader"	: {
+				"asset"	: "bar_shader_boss"
+			}
+		}
+	}
+}

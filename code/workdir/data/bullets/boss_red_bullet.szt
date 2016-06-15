@@ -1,0 +1,45 @@
+{
+	"layer" : ["foreground", 101],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [0.44, 0.44]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "metaball",
+			"blendmode"	: "additive",
+			"color"		: [255, 120, 120],
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			
+			"bullet"		: 1,
+			
+			"friction"		: 0,
+			"restitution"	: 0,
+			"density"		: 10,
+			"bodytype"		: "dynamic",
+			
+			"shape" 		: "circle",
+			"radius"		: 75
+		}
+	}
+}

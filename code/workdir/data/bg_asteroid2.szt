@@ -1,0 +1,41 @@
+{
+	"layer" : ["background", 51],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			//"position" 	: [0, 0],
+			"depth"		: 40,
+			"scale"		: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "asteroid2"
+			//,"opacity"	: 0
+		},
+		
+		"animation" :
+		{
+			"framesize" : [110, 95],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle"		:
+				{
+					"start" 	: 0,
+					"end"		: 99,
+					"fps"		: 15,
+					"looping"	: 1
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67D3487E-8DC5-471E-BC12-FCE4AE1D86B8}</ProjectGuid>
+    <RootNamespace>spacegame</RootNamespace>
+    <ProjectName>scyori</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)szen\inc\;$(SolutionDir)szen\thirdparty\sfml2\include;$(ProjectDir);$(SolutionDir)szen\thirdparty\;$(SolutionDir)..\tools\vld\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>szen-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)szen\lib\;$(SolutionDir)..\tools\vld\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)szen\inc\;$(SolutionDir)szen\thirdparty\sfml2\include;$(ProjectDir);$(SolutionDir)szen\thirdparty\</AdditionalIncludeDirectories>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>szen.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)szen\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="game\Entities\Abilities\PlayerCharge.cpp" />
+    <ClCompile Include="game\Entities\Abilities\PlayerFade.cpp" />
+    <ClCompile Include="game\Entities\Actors\ActorEntityBase.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyBasic.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyBossGreen.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyBossRed.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyHeavy.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyLeech.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyRotary.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyHugger.cpp" />
+    <ClCompile Include="game\Entities\Bullets\BulletEntityBase.cpp" />
+    <ClCompile Include="game\Entities\Bullets\EnemyBasicBullet.cpp" />
+    <ClCompile Include="game\Entities\Bullets\EnemyBossRedBullet.cpp" />
+    <ClCompile Include="game\Entities\Bullets\EnemyHeavyBullet.cpp" />
+    <ClCompile Include="game\Entities\Bullets\EnemyRotaryBullet.cpp" />
+    <ClCompile Include="game\Entities\Bullets\PlayerBullet.cpp" />
+    <ClCompile Include="game\Entities\Actors\Enemies\EnemyEntityBase.cpp" />
+    <ClCompile Include="game\Entities\Actors\PlayerEntity.cpp" />
+    <ClCompile Include="game\Entities\Abilities\PlayerLash.cpp" />
+    <ClCompile Include="game\Entities\Effects\BossBar.cpp" />
+    <ClCompile Include="game\Entities\Effects\EnergyBar.cpp" />
+    <ClCompile Include="game\Entities\Effects\ExplosionEffect.cpp" />
+    <ClCompile Include="game\Entities\Effects\FluxBar.cpp" />
+    <ClCompile Include="game\Entities\Effects\Fluxicle.cpp" />
+    <ClCompile Include="game\Entities\Effects\PlayerSmoke.cpp" />
+    <ClCompile Include="game\Entities\Effects\EnergyBeam.cpp" />
+    <ClCompile Include="game\Entities\Effects\SecondaryExplosion.cpp" />
+    <ClCompile Include="game\Entities\Misc\GameMessage.cpp" />
+    <ClCompile Include="game\Game.cpp" />
+    <ClCompile Include="game\GameGlobals.cpp" />
+    <ClCompile Include="game\Misc\DamageReport.cpp" />
+    <ClCompile Include="game\Scenes\MenuScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="game\Scenes\GameScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game\Entities\Abilities\PlayerCharge.hpp" />
+    <ClInclude Include="game\Entities\Abilities\PlayerFade.hpp" />
+    <ClInclude Include="game\Entities\Actors\ActorEntityBase.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyBasic.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyBossGreen.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyBossRed.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyHeavy.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyLeech.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyRotary.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyHugger.hpp" />
+    <ClInclude Include="game\Entities\Bullets\BulletEntityBase.hpp" />
+    <ClInclude Include="game\Entities\Bullets\EnemyBasicBullet.hpp" />
+    <ClInclude Include="game\Entities\Bullets\EnemyBossRedBullet.hpp" />
+    <ClInclude Include="game\Entities\Bullets\EnemyHeavyBullet.hpp" />
+    <ClInclude Include="game\Entities\Bullets\EnemyRotaryBullet.hpp" />
+    <ClInclude Include="game\Entities\Bullets\PlayerBullet.hpp" />
+    <ClInclude Include="game\Entities\Actors\Enemies\EnemyEntityBase.hpp" />
+    <ClInclude Include="game\Entities\Actors\PlayerEntity.hpp" />
+    <ClInclude Include="game\Entities\Abilities\PlayerLash.hpp" />
+    <ClInclude Include="game\Entities\Effects\BossBar.hpp" />
+    <ClInclude Include="game\Entities\Effects\EnergyBar.hpp" />
+    <ClInclude Include="game\Entities\Effects\ExplosionEffect.hpp" />
+    <ClInclude Include="game\Entities\Effects\FluxBar.hpp" />
+    <ClInclude Include="game\Entities\Effects\Fluxicle.hpp" />
+    <ClInclude Include="game\Entities\Effects\PlayerSmoke.hpp" />
+    <ClInclude Include="game\Entities\Effects\EnergyBeam.hpp" />
+    <ClInclude Include="game\Entities\Effects\SecondaryExplosion.hpp" />
+    <ClInclude Include="game\Entities\Misc\GameMessage.hpp" />
+    <ClInclude Include="game\Game.hpp" />
+    <ClInclude Include="game\GameGlobals.hpp" />
+    <ClInclude Include="game\Misc\DamageReport.hpp" />
+    <ClInclude Include="game\Scenes\GameScene.hpp" />
+    <ClInclude Include="game\Scenes\MenuScene.hpp" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="spacegame.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

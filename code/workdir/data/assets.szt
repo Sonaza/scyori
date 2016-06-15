@@ -1,0 +1,132 @@
+{
+	"assets" :
+	{
+		"textures" 	:
+		{
+			// Level resources
+			"background"		: "bigspace.jpg",
+			"bgstars"			: "bgstars.jpg",
+			"bgstars2"			: "bgstars2.jpg",
+			
+			"bgdarken"			: "spacedarken.png",
+			"thesun"			: "sun.png",
+			"theplanet"			: "planet.png",
+			
+			"asteroid1"			: "asteroid.png",
+			"asteroid2"			: "asteroid2.png",
+			
+			"bg_dust"			: "bg_dust.png",
+			"bg_dust2"			: "bg_dust2.png",
+			
+			// Player resources
+			"player"			: "player.png",
+			"player_lash"		: "player_lash.png",
+			"player_charge"		: "player_charge.png",
+			
+			"electric"			: "electric.png",
+			
+			"stance_wave"		: "stance_wave.jpg",
+			
+			// Particles & stuff
+			"smoke"				: "smoke.png",
+			"particle_smoke"	: "particle_smoke.png",
+			"energy_beam"		: "energy_beam.png",
+			
+			"explosion"			: "explosion.png",
+			
+			"particle_charge"	: "particle_charge.png",
+			
+			"explosion_smoke"	: "explosion_smoke.png",
+			
+			// Enemy resources
+			"enemy_basic"			: "enemy_basic.png",
+			"enemy_heavy"			: "enemy_heavy.png",
+			"enemy_hugger"			: "enemy_hugger.png",
+			"enemy_rotary"			: "enemy_rotary.png",
+			
+			"enemy_leech"			: "enemy_leech.png",
+			
+			"enemy_boss_red"		: "boss_red.png",
+			
+			"boss_red_shield"		: "boss_red_shield.png",
+			
+			// Other
+			"metaball"			: "metaball.png",
+			"metaball2"			: "metaball2.png",
+			
+			"fluxicle"			: "fluxicle.png",
+			
+			"blank"				: "blank.png",
+			
+			// Interface
+			"interface_bottom"	: "screen_bottom.png",
+			"bar_base"			: "bar_base.png",
+			
+			"credits"			: "credits.png",
+			
+			"game_over"			: "game_over.png",
+			
+			"station_center"	: "station/station_center.png",
+			
+			"station_pipe_mask"	: "station/pipe_flow_mask.jpg",
+			
+			"station_pipe_n"	: "station/station_pipe_n.png",
+			"station_pipe_sw"	: "station/station_pipe_sw.png",
+			"station_pipe_se"	: "station/station_pipe_se.png",
+			
+			"station_wall_s"	: "station/station_wall_s.png",
+			"station_wall_nw"	: "station/station_wall_nw.png",
+			"station_wall_ne"	: "station/station_wall_ne.png",
+			
+			"station_frame_tl"	: "station/station_frame_tl.png",
+			"station_frame_tr"	: "station/station_frame_tr.png",
+			"station_frame_bl"	: "station/station_frame_bl.png",
+			"station_frame_br"	: "station/station_frame_br.png"
+		},
+		
+		"sounds"	:
+		{
+			"charge"		: "snd/charge.wav",
+			
+			"explosion_1"	: "snd/explosion_1.wav",
+			"explosion_2"	: "snd/explosion_2.wav",
+			
+			"menu_select"	: "snd/menu_select.wav",
+			"menu_confirm"	: "snd/menu_confirm.wav",
+			"menu_back"		: "snd/menu_back.wav",
+			
+			"player_cannon"	: "snd/player_cannon.wav",
+			"player_stance_charge" : "snd/player_stance_charge.wav",
+			"player_stance_hit"	: "snd/player_stance_hit.wav",
+			
+			"flux_collect_1"	: "snd/flux_collect_1.wav",
+			"flux_collect_2"	: "snd/flux_collect_2.wav",
+			"flux_collect_3"	: "snd/flux_collect_3.wav",
+			
+			"boss_cannon"		: "snd/boss_cannon.wav",
+			
+			"big_boom"			: "snd/big_boom.wav"
+		},
+		
+		"fonts"		:
+		{
+			"powerchord"	: "powerchord.ttf"
+		},
+		
+		"shaders" 	:
+		{
+			"bar_shader_boss" 	: "effects/bar_shader.frag",
+			"bar_shader_energy" : "effects/bar_shader.frag",
+			"bar_shader_flux" 	: "effects/bar_shader_flux.frag",
+			
+			"station_pipe_flow"	: "station/pipe_flow.frag",
+			
+			"mana_forge_green"	: "effects/mana_forge_green.frag",
+			"mana_forge_red"	: "effects/mana_forge_red.frag",
+			"mana_forge_blue"	: "effects/mana_forge_blue.frag",
+			
+			"overlay" 	: "effects/overlay.frag",
+			"flash"		: "effects/flash.frag"
+		}
+	}
+}

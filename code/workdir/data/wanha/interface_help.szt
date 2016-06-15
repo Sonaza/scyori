@@ -1,0 +1,29 @@
+{
+	"layer" : ["interface", 50],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"pivot"		: [-600, 175],
+			"rotation" 	: [0],
+			"scale" 	: [0.5, 0.5],
+			
+			//"anchor"	: ["center", "center"]
+			//"point"		: [],
+			"anchor"	: ["left", "bottom"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "happytime"
+		}
+	}
+}

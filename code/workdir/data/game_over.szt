@@ -1,0 +1,28 @@
+{
+	"layer" : ["interface", 250],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"pivot"		: [0, 5],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1],
+			
+			"anchor"	: ["center", "center"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "game_over",
+			"opacity"	: 0.0
+		}
+	}
+}

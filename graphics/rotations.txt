@@ -1,0 +1,47 @@
+-90
+-87.2041
+-78.5363
+-63.7281
+-42.7766
+-15.9901
+16.0246
+52.4385
+92.3147
+134.721
+178.816
+223.889
+269.379
+314.854
+360
+384.71
+399.299
+410.743
+420.371
+428.701
+435.958
+442.191
+447.227
+
+m_rotations[i++] = -180.f;
+m_rotations[i++] = -177.2041f;
+m_rotations[i++] = -168.5363f;
+m_rotations[i++] = -153.7281f;
+m_rotations[i++] = -132.7766f;
+m_rotations[i++] = -105.9901f;
+m_rotations[i++] = -73.9754f;
+m_rotations[i++] = -37.5615f;
+m_rotations[i++] = 2.3147f;
+m_rotations[i++] = 44.721f;
+m_rotations[i++] = 88.816f;
+m_rotations[i++] = 133.889f;
+m_rotations[i++] = 179.379f;
+m_rotations[i++] = 224.854f;
+m_rotations[i++] = 270.f;
+m_rotations[i++] = 294.71f;
+m_rotations[i++] = 309.299f;
+m_rotations[i++] = 320.743f;
+m_rotations[i++] = 330.371f;
+m_rotations[i++] = 338.701f;
+m_rotations[i++] = 345.958f;
+m_rotations[i++] = 352.191f;
+m_rotations[i++] = 357.227f;

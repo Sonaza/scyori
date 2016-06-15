@@ -1,0 +1,97 @@
+{
+	"layer" : ["foreground", 10],
+	
+	"assets" :
+	{
+		"textures" :
+		{
+			"box"				: "anim.png",
+			"prefabparticle"	: "testparticle.png"
+		},
+		
+		"sounds" :
+		{
+			
+		}
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "box",
+			"blendmode"	: "additive"
+		},
+		
+		"animation" :
+		{
+			"framesize" : [250, 250],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 49,
+					"fps"		: 30,
+					"looping"	: 1
+				}
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			
+			"friction"		: 0,
+			"restitution"	: 0,
+			"density"		: 0.4,
+			"bodytype"		: "dynamic",
+			
+			/*"shape" 		: "box",
+			"size"			: [256, 256]*/
+			
+			
+			"shape" 		: "circle",
+			"radius"		: 95
+			
+			/*"shape" 		: "polygon",
+			"vertices"		: [
+				128, 128,
+				-128, 128,
+				-128, -128,
+				128, -128
+			]*/
+		},
+		
+		"particle" :
+		{
+			"texture"		: "prefabparticle",
+			"blendmode"		: "additive",
+			
+			"prewarm"		: 1,
+			
+			"emissionrate"	: 20,
+			"lifetime"		: [3, 7],
+			
+			"velocity"		: [0, 0],
+			
+			"rotation"		: [0, 360],
+			"rotationspeed"	: [-22, 24],
+			
+			"affectors"		:
+			{
+				"fade"		: [0.05, 0.8],
+				"scale"		: [0.2, 0.2]
+			}
+		}
+	}
+}

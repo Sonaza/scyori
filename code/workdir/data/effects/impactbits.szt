@@ -1,0 +1,45 @@
+{
+	"layer" : ["foreground", 20],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [-500, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"particle" :
+		{
+			"texture"		: "metaball",
+			"blendmode"		: "additive",
+			"color"			: [255, 200, 40],
+			
+			"shader" 	:
+			{
+				"asset" : "impact"
+			},
+			
+			"prewarm"		: 0,
+			
+			"emissionrate"	: 0,
+			"lifetime"		: [1.5],
+			
+			"velocity"		: [0, 0],
+			"scale"			: [0.02, 0.09],
+			"rotation"		: [0],
+			
+			"affectors"		:
+			{
+				"scale"		: [-0.1, -0.1]
+				//"fade"		: [0.2, 0.78]
+			}
+		}
+	}
+}

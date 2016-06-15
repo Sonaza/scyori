@@ -1,0 +1,74 @@
+{
+	"parent"	: "player",
+	"layer" 	: ["foreground", 30],
+	
+	"assets" :
+	{
+		/*"textures" :
+		{
+			"player"		: "player.png"
+		}*/
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.7, 1.7]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "smoke",
+			"blendmode"	: "additive",
+			"color"		: [120, 210, 40]
+		},
+		
+		"animation" :
+		{
+			"framesize" : [250, 250],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle"		:
+				{
+					"start" 	: 0,
+					"end"		: 49,
+					"fps"		: 25,
+					"looping"	: 0
+				}
+			}
+		},
+		
+		"particle" :
+		{
+			"texture"		: "particle_smoke",
+			"blendmode"		: "additive",
+			"color"			: [120, 220, 40, 190],
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			},
+			
+			"prewarm"		: 0,
+			
+			"emissionrate"	: 20,
+			"lifetime"		: [1.5],
+			
+			"velocity"		: [0, 0],
+			"scale"			: [0.8, 1.5],
+			"rotation"		: [-180, 180],
+			"rotationspeed" : [-90, 90],
+			
+			"affectors"		:
+			{
+				"scale"		: [-0.3, -0.3],
+				"fade"		: [0.01, 0.9]
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"layer" : ["foreground", 25],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1, 1]
+		},
+		
+		"particle" :
+		{
+			"texture"		: "explosion_smoke",
+			//"blendmode"		: "additive",
+			//"color"			: [255, 255, 255, 160],
+						
+			"prewarm"		: 0,
+			
+			"emissionrate"	: 82,
+			"lifetime"		: [1.5],
+			
+			"velocity"		: [0, 0],
+			"scale"			: [0.2, 0.5],
+			"rotation"		: [-180, 180],
+			"rotationspeed"	: [-245, 245],
+			
+			"affectors"		:
+			{
+				"fade"		: [0.2, 0.7],
+				"scale"		: [0.1, 0.1]
+			}
+		}
+	}
+}

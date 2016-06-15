@@ -1,0 +1,23 @@
+{
+	"layer" : ["background", 200],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [2.2, 2.2]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "station"
+		}
+	}
+}

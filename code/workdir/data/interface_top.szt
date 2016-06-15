@@ -1,0 +1,29 @@
+{
+	"layer" : ["interface", 40],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, -30],
+			"pivot"		: [0, 167.5],
+			"rotation" 	: [180],
+			"scale" 	: [1, 1],
+			
+			"anchor"	: ["center", "top"],
+			"native"	: 1920
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "interface_bottom",
+			"blendmode"	: "multiply",
+			"opacity"	: 0.8
+		}
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"layer" : ["foreground", 50],
+	
+	"assets" :
+	{
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [1.4, 1.4]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "enemy_heavy",
+			"color"		: [0, 255, 255],
+			
+			"shader" 	:
+			{
+				"asset" : "flash"
+			}
+		},
+		
+		"animation" :
+		{
+			"framesize" : [50, 50],
+			"autoplay"	: "idle",
+			
+			"sequences" :
+			{
+				"idle" 	:
+				{
+					"start" 	: 0,
+					"end"		: 49,
+					"fps"		: 25,
+					"looping"	: 1
+				}
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			"speedlimit"	: 130,
+			
+			"friction"		: 0,
+			"restitution"	: 0,
+			"density"		: 200,
+			"bodytype"		: "dynamic",
+			
+			"shape" 		: "circle",
+			"radius"		: 20
+		}
+	}
+}

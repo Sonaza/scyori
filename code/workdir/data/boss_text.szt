@@ -1,0 +1,32 @@
+{
+	"layer" : ["interface", 52],
+	
+	"assets" :
+	{
+		
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [-500, 70],
+			"scale"		: [1, 1],
+			
+			"pivot"		: [-0.5, 0.5],
+			
+			"anchor"	: ["center", "top"],
+			"native"	: 1920
+		},
+		
+		"textrenderer" :
+		{
+			"color"		: [255, 252, 248],
+			
+			"font"		: "powerchord",
+			"size"		: 50,
+			
+			"string"	: "Boss"
+		}
+	}
+}

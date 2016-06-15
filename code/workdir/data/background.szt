@@ -1,0 +1,27 @@
+{
+	"layer" : ["background", 0],
+	
+	"assets" :
+	{
+		/*"textures" :
+		{
+			"background"	: "space.jpg"
+		}*/
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			//"position" 	: [0, 0],
+			"depth"		: 50,
+			"scale"		: [2.0, 2.0]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "background",
+			"opacity"	: 1
+		}
+	}
+}

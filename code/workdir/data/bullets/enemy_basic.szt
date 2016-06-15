@@ -1,0 +1,53 @@
+{
+	"layer" : ["foreground", 50],
+	
+	"assets" :
+	{
+		/*"textures" :
+		{
+			"metaball"		: "bullet.png"
+		},
+		
+		"shaders" :
+		{
+			"overlay" : "../effects/overlay.frag"
+		}*/
+	},
+	
+	"components" :
+	{
+		"transform" :
+		{
+			"position" 	: [0, 0],
+			"rotation" 	: [0],
+			"scale" 	: [0.14, 0.14]
+		},
+		
+		"renderer" :
+		{
+			"texture" 	: "metaball",
+			"blendmode"	: "additive",
+			"color"		: [255, 140, 255],
+			
+			"shader" 	:
+			{
+				"asset" : "overlay"
+			}
+		},
+		
+		"physics" :
+		{
+			"gravityscale"	: 1,
+			
+			"bullet"		: 1,
+			
+			"friction"		: 0,
+			"restitution"	: 0,
+			"density"		: 10,
+			"bodytype"		: "dynamic",
+			
+			"shape" 		: "circle",
+			"radius"		: 65
+		}
+	}
+}
