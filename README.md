@@ -2,6 +2,8 @@
 
 My 2D C++ game engine and a space game. Game took part in Assembly Summer 2013.
 
+Game is downloadable at [Bluefoxgames.org](http://bluefoxgames.org/games/view/scyori).
+
 ## Dependencies
 
 Scyori makes use of SFML2, Boost, Box2D and Thor.
