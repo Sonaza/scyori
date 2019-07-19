@@ -10,8 +10,6 @@ Scyori makes use of SFML2, Boost, Box2D and Thor.
 
 ## License
 
-Source code is licensed under [Creative Commons Attribution NonCommercial (CC-BY-NC)](https://creativecommons.org/licenses/by-nc/3.0/).
+Source code is licensed under [BSD-3-Clause](https://github.com/Sonaza/scyori/blob/master/LICENSE.md).
 
-You are free to modify and distribute source code but not for commercial purposes. You must state changes, give credit and include the copyright notice.
-
-Copyright to art and other assets remain all rights reserved.
+Art assets and everything else remain all rights reserved.
